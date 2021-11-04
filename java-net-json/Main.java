@@ -15,11 +15,17 @@ public class Main {
             BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( new FileOutputStream(filename), "utf-8" ) );			
 
             System.out.println("社員コード");
-            Scanner sc = new Scanner(System.in);
-            String line = sc.nextLine();
+            Scanner sc = new Scanner(System.in, "MS932");
+            String scode = sc.nextLine();
+            System.out.println("氏名");
+            String sname = sc.nextLine();
 
             // URL文字列
-            String str = "http://localhost/php-test/db-select-02-heardoc.php?scode=" + line;
+            String str = "http://localhost/php-test/db-select-02-heardoc.php?scode=" 
+                + scode
+                + "&sname="
+                + URLEncoder.encode(sname, "utf-8");
+
             // ターゲット
             URL url = new URL( str );
             // 接続オブジェクト
