@@ -14,11 +14,34 @@ public class Main {
             // テキストで書き込み為の準備
             BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( new FileOutputStream(filename), "utf-8" ) );			
 
-            System.out.println("社員コード");
-            Scanner sc = new Scanner(System.in, "MS932");
-            String scode = sc.nextLine();
-            System.out.println("氏名");
-            String sname = sc.nextLine();
+            // System.out.println("社員コード");
+            // Scanner sc = new Scanner(System.in, "UTF-8");
+            // String scode = sc.nextLine();
+            // System.out.println("氏名");
+            // String sname = sc.nextLine();
+            String target = "社員マスタ.csv";
+            String scode = "";
+            String sname = "";
+            try {
+                FileInputStream sjis_file = new FileInputStream(target);
+                InputStreamReader charset_stream = new InputStreamReader(sjis_file, "ms932");
+                BufferedReader buffer = new BufferedReader(charset_stream);
+
+                String line_buffer;
+                line_buffer = buffer.readLine();
+                String[] data = line_buffer.split(",");
+
+                scode = data[0];
+                sname = data[1];
+                    
+                // 閉じる
+                buffer.close();
+                charset_stream.close();
+                sjis_file.close();
+            } catch (Exception e) {
+                //TODO: handle exception
+            }
+
 
             // URL文字列
             String str = "http://localhost/php-test/db-select-02-heardoc.php?scode=" 
