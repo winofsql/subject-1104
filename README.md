@@ -8,3 +8,5 @@ C# と Java から POST\
 ### Scanner(System.in) は、VSCODE 環境では日本語が使えない( Java を SHIFT_JIS にすると使えたという記事あり )
 
 ### cs-form-1104-01 は Visual Studio で作った画面の利用テスト
+
+### java-net-post で 掲示板に POST
