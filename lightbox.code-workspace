@@ -4,6 +4,9 @@
             "path": "cs-form-1104-01"
         },
         {
+            "path": "java-csv-read-ms932"
+        },
+        {
             "path": "java-net-json"
         },
         {
@@ -14,7 +17,7 @@
         },
         {
             "path": "zz-workspace"
-        },
+        }
     ],
     "settings": {
         "code-runner.runInTerminal": true,
@@ -613,7 +616,7 @@
                 "group": "🖐 設定"
             },
             {
-                "command": "cd ..\\..\\ && git clone https://github.com/winofsql/subject.git && ren subject subject-main && cd subject-main && rmdir .git /S /Q",
+                "command": "cd ..\\..\\ && git clone https://github.com/winofsql/subject.git && ren subject subject-main && cd subject-main && rmdir .git /S /Q && copy README.md zz-workspace",
                 "name": "🟥 SUBJECT MAIN",
                 "auto": true,
                 "group": "🖐 設定"
