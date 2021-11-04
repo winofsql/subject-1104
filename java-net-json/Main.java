@@ -44,7 +44,7 @@ public class Main {
 
 
             // URL文字列
-            String str = "http://localhost/php-test/db-select-02-heardoc.php?scode=" 
+            String str = "http://localhost/php-test/db-update-api.php?scode=" 
                 + scode
                 + "&sname="
                 + URLEncoder.encode(sname, "utf-8");
