@@ -1,0 +1,636 @@
+{
+    "folders": [
+        {
+            "path": "cs-1104-02"
+        },
+        {
+            "path": "cs-1104-03"
+        },
+        {
+            "path": "cs-form-1104-01"
+        },
+        {
+            "path": "java-net-json"
+        },
+        {
+            "path": "java-net-post"
+        },
+        {
+            "path": "subject-1028-cs-post"
+        },
+        {
+            "path": "zz-workspace"
+        },
+    ],
+    "settings": {
+        "code-runner.runInTerminal": true,
+        "code-runner.fileDirectoryAsCwd": true,
+        "code-runner.executorMapByFileExtension": {
+            ".hta": "\\Windows\\SysWOW64\\mshta.exe",
+            ".htm": "\\Windows\\SysWOW64\\mshta.exe"
+        },
+        "code-runner.executorMap": {
+            "csv": "explorer",
+            "javascript": "cscript //Nologo",
+            "php": "\\xampp\\php\\php.exe",
+            "python": "python -u",
+            "powershell": "powershell -NoProfile -ExecutionPolicy Unrestricted -File",
+            "csharp": "dotnet run",
+            "vbscript": "cscript //Nologo"
+        },
+        "files.associations": {
+            "*.ujis": "perl",
+            "*.932": "csv",
+            "*.jsp": "java",
+            "*.htm": "html",
+            "*.hta": "html",
+            "*.xlsx": "excel"
+        },
+        "terminal.integrated.fontSize": 16,
+        "terminal.integrated.profiles.windows": {
+            "PowerShell": {
+                "source": "PowerShell",
+                "icon": "terminal-powershell"
+            },
+            "Command Prompt": {
+                "path": [
+                    "C:\\WINDOWS\\system32\\cmd.exe"
+                ],
+                "args": [],
+                "icon": "terminal-cmd"
+            },
+            "Git Bash": {
+                "source": "Git Bash"
+            }
+        },
+        "terminal.integrated.defaultProfile.windows": "Command Prompt",
+        "csv-edit.fontSizeInPx": 14,
+        "csv-preview.formatValues": "never",
+        "[perl]": {
+            "files.encoding": "eucjp"
+        },
+        "[csv]": {
+            "files.encoding": "shiftjis"
+        },
+        "[vbs]": {
+            "files.encoding": "shiftjis"
+        },
+        "[bat]": {
+            "files.encoding": "shiftjis"
+        },
+        "[powershell]": {
+            "files.encoding": "shiftjis"
+        },
+        "[php]": {
+            "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+        },
+        "[javascript]": {
+            "editor.defaultFormatter": "vscode.typescript-language-features"
+        },
+        "[html]": {
+            "editor.defaultFormatter": "vscode.html-language-features"
+        },
+        "sql-formatter.uppercase": true,
+        "[sql]": {
+            "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+        },
+        "[csharp]": {
+            "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
+        },
+        "[java]": {
+            "editor.defaultFormatter": "redhat.java"
+        },
+        "[jsonc]": {
+            "editor.defaultFormatter": "vscode.json-language-features"
+        },
+        "runTerminalCommand.commands": [
+            {
+                "command": "explorer {resource}",
+                "name": "選択したファイルを既定のアプリで開く",
+                "auto": true
+            },
+            {
+                "command": "code {resource}",
+                "name": "VSCode でフォルダを開く",
+                "auto": true
+            },
+            {
+                "command": "mkdir php-mvc-mysql-insert && cd php-mvc-mysql-insert && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/php-mvc-mysql-insert/raw/main connect.php control.php model.php setting.php view.php",
+                "name": "✅ PHP MVC テンプレートファイル",
+                "auto": true,
+                "group": "🟠 PHP"
+            },
+            {
+                "command": "mkdir php-pdo-select-basic && cd php-pdo-select-basic && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/php-pdo-select-basic/raw/main README.md connect.php db-select-01-array.php db-select-02-heardoc.php setting.php",
+                "name": "🐬 PHP PDO SELECT LOOP サンプル",
+                "auto": true,
+                "group": "🟠 PHP"
+            },
+            {
+                "command": "mkdir ..\\java-basic-misc && cd ..\\java-basic-misc && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/subject-1014-java-basic-misc/raw/main Main.java Second.java Third.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "✅ java-基本部分",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\compare-java-01 && cd ..\\compare-java-01 && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/subject-1021-java-csharp-basic/raw/main Program.java && mkdir ..\\compare-cs-01 && cd ..\\compare-cs-01 && dotnet new console && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/subject-1021-java-csharp-basic/raw/main Program.cs && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "✅ java C# 比較セット ( 1 )",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-hello-array && cd ..\\java-hello-array && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-hello-array/raw/main HelloArray.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌝 java-hello-array",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-class-list-array && cd ..\\java-class-list-array && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-class-list-array/raw/main Main.java Person.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌝 java-class-list-array",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-map-list-array && cd ..\\java-map-list-array && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-map-list-array/raw/main README.md Pg1MapGetEnv.java Pg2GetenvToArray.java Pg3ArrayToList.java Pg4MapForEach.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌝 java-map-list-array",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-mysql-select-string-int && cd ..\\java-mysql-select-string-int && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-mysql-select-string-int/raw/main Main.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🐬 java-mysql-select-string-int",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-mysql-select-date-column-info && cd ..\\java-mysql-select-date-column-info && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-mysql-select-date-column-info/raw/main Main.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🐬 java-mysql-select-date-column-info",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-csv-read-ms932 && cd ..\\java-csv-read-ms932 && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-csv-read-ms932/raw/main Main.java Main2.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📄 java-csv-read-ms932",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-net-text && cd ..\\java-net-text && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-net-text/raw/main Main.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌏 java-net-text",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-net-binary && cd ..\\java-net-binary && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-net-binary/raw/main Main.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌏 java-net-binary",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-net-json && cd ..\\java-net-json && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-net-json/raw/main Main.java Syain.java README.md && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌏 java-net-json",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-net-post && cd ..\\java-net-post && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-net-post/raw/main Main.java README.md && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌏 java-net-post",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-excel-newbook-cell && cd ..\\java-excel-newbook-cell && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-excel-newbook-cell/raw/main Main.java README.md && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📊 java-excel-newbook-cell",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-pdfbox-text-line && cd ..\\java-pdfbox-text-line && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-pdfbox-string-line/raw/main Main.java README.md PdfText.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📇 java-pdfbox-text-line",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-accdb-01 && cd ..\\java-accdb-01 && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-accdb-01/raw/main Main.java README.md hanbaic.accdb hanbaic.mdb && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📕 java-accdb-01",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "RunDLL32.EXE shell32.dll,Control_RunDLL appwiz.cpl",
+                "name": "───────────────────────────────────────────",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-swing-action-text-field && cd ..\\java-swing-action-text-field && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-swing-input-field-action/raw/main Main.java \\action Action.java AppWindow.java BaseWindow.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🚀✅ java-swing-action-text-field",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-swing-text-read-write && cd ..\\java-swing-text-read-write && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-swing-text-read-write/raw/main Main.java README.md \\action AppWindow.java BaseWindow.java Check.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🚀📄 java-swing-text-read-write",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-swing-jtable-csv-text && cd ..\\java-swing-jtable-csv-text && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-swing-jtable-csv-text/raw/main Main.java syain.csv && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🚀📄 java-swing-jtable-csv-text",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-swing-send-mail && cd ..\\java-swing-send-mail && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/java-swing-send-mail/raw/main Main.java README.md \\action Action.java AppWindow.java BaseWindow.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🚀💌 java-swing-send-mail",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "control.exe /name Microsoft.WindowsUpdate",
+                "name": "───────────────────────────────────────────",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-0908-hello-class && cd ..\\java-0908-hello-class && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/subject-0908-java-hello-class/raw/main HelloClass.java ConsoleFormat.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "0908 java-hello-class",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "mkdir ..\\java-0909-hello-class && cd ..\\java-0909-hello-class && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/subject-0909-java-hello-class/raw/main Hello.java LocalAction.java \\database MysqlAction.java && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "0909 java-hello-class",
+                "auto": true,
+                "group": "🟥 Java"
+            },
+            {
+                "command": "dotnet new console && dotnet add package System.Data.Odbc && dotnet add package System.Text.Encoding.CodePages",
+                "name": "コンソールプロジェクト作成",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "dotnet new winforms && dotnet add package System.Data.Odbc && dotnet add package System.Text.Encoding.CodePages",
+                "name": "Form プロジェクト作成",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-core-mysql-01 && cd ..\\cs-core-mysql-01 && dotnet new console && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-core-mysql-01/raw/main Program.cs && dotnet add package System.Data.Odbc && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🐬【バッチ】MySQL を読み込む",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\subject-1028-cs-post && cd ..\\subject-1028-cs-post && dotnet new console && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/subject-1028-cs-post/raw/main Program.cs README.md \\php keijiban.php keijiban.txt model.php view.php && dotnet add package System.Text.Encoding.CodePages && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌏【バッチ : WEBアクセス】PHP の FORM にPOST する",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-con-pdfsharp && cd ..\\cs-con-pdfsharp && dotnet new console && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-con-pdfsharp/raw/main Program.cs FontResolver.cs README.md && dotnet add package PdfSharp --version 1.50.5147 && dotnet add package System.Text.Encoding.CodePages && dotnet add package System.Drawing.Common && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📇【バッチ】PdfSharp とフリーフォント( けいふぉんと )で PDF 作成",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-con-pdfsharp-rectangle && cd ..\\cs-con-pdfsharp-rectangle && dotnet new console && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-con-pdfsharp-rectangle/raw/main Program.cs FontResolver.cs && dotnet add package PdfSharp --version 1.50.5147 && dotnet add package System.Text.Encoding.CodePages && dotnet add package System.Drawing.Common && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📇【バッチ】ラノベPOP と 長方形描画 ( PDF 作成 )",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-con-form-open-file-dialog && cd ..\\cs-con-form-open-file-dialog && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-con-form-open-file-dialog/raw/main Program.cs cs-con-form-open-file-dialog.csproj && dotnet add package System.Text.Encoding.CodePages && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📇【バッチ + FORM】ファイルを開くダイアログ",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "cd ..\\ && git clone https://github.com/winofsql/cs-con-oledb-01.git && cd cs-con-oledb-01 && rmdir .git /S /Q && dotnet add package System.Data.OleDb && cd ..\\ && git clone https://github.com/winofsql/cs-con-oledb-02.git && cd cs-con-oledb-02 && rmdir .git /S /Q && dotnet add package System.Data.OleDb && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📕【バッチ + MS Access as DB】Microsoft Access に DB としてアクセス",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "start chrome http://font.sumomo.ne.jp/font_1.html",
+                "name": "───────────────────────────────────────────",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-mysql-01 && cd ..\\cs-form-mysql-01 && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-mysql-01/raw/main Form1.cs Form1.Designer.cs && dotnet add package System.Data.Odbc && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🐬【マスタメンテ-(1)】主キーによる情報の読み込み",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-mysql-02 && cd ..\\cs-form-mysql-02 && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-mysql-02/raw/main Form1.cs Form1.Designer.cs && dotnet add package System.Data.Odbc && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🐬【マスタメンテ-(2)】会話による画面コントロール",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-mysql-03 && cd ..\\cs-form-mysql-03 && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-mysql-03/raw/main Form1.cs Form1.Designer.cs && dotnet add package System.Data.Odbc && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🐬【マスタメンテ-(3)】更新処理と会話コントロール",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-mysql-04 && cd ..\\cs-form-mysql-04 && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-mysql-04/raw/main Form1.cs Form1.Designer.cs && dotnet add package System.Data.Odbc && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🐬【マスタメンテ-(4)】コンボボックスと専用プライベートクラス",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-mysql-05 && cd ..\\cs-form-mysql-05 && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-mysql-05/raw/main Form1.cs Form1.Designer.cs && dotnet add package System.Data.Odbc && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🐬【マスタメンテ-(5)】コンボボックスをDBより読み込んで作成",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-mysql-06 && cd ..\\cs-form-mysql-06 && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-mysql-06/raw/main Form1.cs Form1.Designer.cs Form2.cs Form2.Designer.cs && dotnet add package System.Data.Odbc && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🐬【マスタメンテ-(6)】新しい Form で一覧を表示してダブルクリックで参照",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "start chrome https://docs.microsoft.com/ja-jp/dotnet/api/system.data.odbc.odbcconnection",
+                "name": "───────────────────────────────────────────",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-mysql-datagridview && cd ..\\cs-form-mysql-datagridview && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-mysql-datagridview/raw/main Form1.cs Form1.Designer.cs && dotnet add package System.Data.Odbc && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🐬【問合せ-(1)】DataGridView で MySQL を読み込む為の Form の定義",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-text-read-write && cd ..\\cs-form-text-read-write && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-text-read-write/raw/main Form1.cs Form1.Designer.cs syain.csv && dotnet add package System.Text.Encoding.CodePages && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📄【テキストファイル】CSV を読み書き",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-net-text && cd ..\\cs-form-net-text && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-net-text/raw/main Form1.cs Form1.Designer.cs && dotnet add package System.Text.Encoding.CodePages && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌏【WEBアクセス】WEB より shift_jis の CSV を読み込む",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-net-binary && cd ..\\cs-form-net-binary && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-net-binary/raw/main Form1.cs Form1.Designer.cs && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌏【WEBアクセス】画像ファイルを WEB より読込む( Byte 配列を保存 )",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-net-json-datagridview && cd ..\\cs-form-net-json-datagridview && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-net-json-datagridview/raw/main Form1.cs Form1.Designer.cs && dotnet add package Newtonsoft.Json --version 13.0.1 && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌏【WEBアクセス】WEB の JSON をオブジェクトに変換して DataGridView で表示する",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-mail-cdo && cd ..\\cs-form-mail-cdo && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-mail-cdo/raw/main Form1.cs Form1.Designer.cs && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "💌【メール送信】CDO を使用してメールを送信する",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "mkdir ..\\cs-form-mail-mailkit && cd ..\\cs-form-mail-mailkit && dotnet new winforms && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/cs-form-mail-mailkit/raw/main Form1.cs Form1.Designer.cs && dotnet add package MailKit --version 2.15.0 && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "💌【メール送信】MailKit でメール送信",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "start chrome https://www.newtonsoft.com/json",
+                "name": "───────────────────────────────────────────",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "dotnet add package System.Data.Odbc",
+                "name": "💼【LIB】System.Data.Odbc 追加",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "dotnet add package System.Data.OleDb",
+                "name": "💼【LIB】System.Data.OleDb 追加",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "dotnet add package System.Text.Encoding.CodePages",
+                "name": "💼【LIB】System.Text.Encoding.CodePages 追加",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "dotnet add package System.Drawing.Common",
+                "name": "💼【LIB】System.Drawing.Common 追加",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "dotnet add package Newtonsoft.Json --version 13.0.1",
+                "name": "💼【LIB】Newtonsoft.Json",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "dotnet add package MailKit --version 2.15.0",
+                "name": "💼【LIB】MailKit",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "dotnet add package PdfSharp --version 1.50.5147",
+                "name": "💼【LIB】PdfSharp",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "cd ..\\ && git clone https://github.com/winofsql/subject-0924-mysql.git && cd subject-0924-mysql && rmdir .git /S /Q && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌏 日付関数・インライビュー・NULL演算・バックアップのSQL",
+                "auto": true,
+                "group": "🐬 SQL"
+            },
+            {
+                "command": "cd ..\\ && git clone https://github.com/winofsql/subject-1008-mysql.git && cd subject-1008-mysql && rmdir .git /S /Q && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌏 LOAD DATA と INTO OUTFILE",
+                "auto": true,
+                "group": "🐬 SQL"
+            },
+            {
+                "command": "cd ..\\ && git clone https://github.com/winofsql/subject-1029-mysql.git && cd subject-1029-mysql && rmdir .git /S /Q && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🌏 データ投入",
+                "auto": true,
+                "group": "🐬 SQL"
+            },
+            {
+                "command": "mkdir py-0929-basic && cd py-0929-basic && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/subject-0929-python-basic/raw/main README.md sample01.py sample02.py sample03.py sample04.py sample05.py sample06.py sample07.py sample08.py sample09.py sample10.py sample11.py sample12.py sample13.py sample14.py sample15.py",
+                "name": "✅ Python Subject Basic 0929",
+                "auto": true,
+                "group": "🐍 Python"
+            },
+            {
+                "command": "mkdir py-0930-basic && cd py-0930-basic && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/subject-0930-python-basic/raw/main README.md flower01.jpg flower02.jpg flower03.jpg sample01.py sample02.py sample03.py sample04.py sample05.py sample06.py sample07.py sample08.py sample09.py sample10.py sample11.py sample12.py",
+                "name": "✅ Python Subject Basic 0930",
+                "auto": true,
+                "group": "🐍 Python"
+            },            
+            {
+                "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\start-localhost.vbs",
+                "name": "🌏 localhost",
+                "auto": true,
+                "group": "テスト"
+            },
+            {
+                "command": "start chrome http://localhost:8080/lightbox",
+                "name": "🐱 TOMCAT : localhost:8080",
+                "auto": true,
+                "group": "テスト"
+            },
+            {
+                "command": "mkdir ..\\java-%date:~5,2%%date:~8,2%-01 && mkdir ..\\java-%date:~5,2%%date:~8,2%-02 && mkdir ..\\java-%date:~5,2%%date:~8,2%-03 && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📂 Java フォルダ作成",
+                "auto": true,
+                "group": "テスト"
+            },
+            {
+                "command": "mkdir ..\\cs-%date:~5,2%%date:~8,2%-01 && mkdir ..\\cs-%date:~5,2%%date:~8,2%-02 && mkdir ..\\cs-%date:~5,2%%date:~8,2%-03 && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📂 C# コンソール フォルダ作成",
+                "auto": true,
+                "group": "テスト"
+            },
+            {
+                "command": "mkdir ..\\cs-form-%date:~5,2%%date:~8,2%-01 && mkdir ..\\cs-form-%date:~5,2%%date:~8,2%-02 && mkdir ..\\cs-form-%date:~5,2%%date:~8,2%-03 && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📂 C# Form フォルダ作成",
+                "auto": true,
+                "group": "テスト"
+            },
+            {
+                "command": "mkdir ..\\php-%date:~5,2%%date:~8,2%-01 && mkdir ..\\php-%date:~5,2%%date:~8,2%-02 && mkdir ..\\php-%date:~5,2%%date:~8,2%-03 && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📂 PHP フォルダ作成",
+                "auto": true,
+                "group": "テスト"
+            },
+            {
+                "command": "mkdir ..\\sql-%date:~5,2%%date:~8,2%-01 && mkdir ..\\sql-%date:~5,2%%date:~8,2%-02 && mkdir ..\\sql-%date:~5,2%%date:~8,2%-03 && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📂 SQL フォルダ作成",
+                "auto": true,
+                "group": "テスト"
+            },
+            {
+                "command": "mkdir ..\\python-%date:~5,2%%date:~8,2%-01 && mkdir ..\\python-%date:~5,2%%date:~8,2%-02 && mkdir ..\\python-%date:~5,2%%date:~8,2%-03 && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📂 Python フォルダ作成",
+                "auto": true,
+                "group": "テスト"
+            },
+            {
+                "command": "mkdir ..\\java-%date:~5,2%%date:~8,2% && mkdir ..\\php-%date:~5,2%%date:~8,2% && mkdir ..\\cs-%date:~5,2%%date:~8,2% && mkdir ..\\python-%date:~5,2%%date:~8,2% && mkdir ..\\sql-%date:~5,2%%date:~8,2% && mkdir ..\\bat-%date:~5,2%%date:~8,2% && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📂 簡易プロジェクトフォルダ作成",
+                "auto": true,
+                "group": "テスト"
+            },
+            {
+                "command": "\\xampp\\mysql\\bin\\my.bat",
+                "name": "🐬 MySQL Command Prompt",
+                "auto": true,
+                "group": "テスト"
+            },
+            {
+                "command": "\\xampp\\apache\\bin\\httpd -t",
+                "name": "❓ Apache Syntax チェック",
+                "auto": true,
+                "group": "テスト"
+            },
+            {
+                "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/vscode-template/raw/main menu-cmd-here.reg",
+                "name": "コマンドプロンプトをエクスプローラのコンテキストメニューから開く( menu-cmd-here.reg )",
+                "auto": true,
+                "group": "ダウンロード"
+            },
+            {
+                "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/vscode-template/raw/main/vs-code.reg",
+                "name": "Codeで開くをエクスプローラのディレクトリコンテキストメニューに登録( vs-code.reg )",
+                "auto": true,
+                "group": "ダウンロード"
+            },
+            {
+                "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/apache-index/raw/main/tomcat xampp-tomcat.reg",
+                "name": "🐱 XAMPP TOMCAT 用 SDK場所登録用( xampp-tomcat.reg )",
+                "auto": true,
+                "group": "ダウンロード"
+            },
+            {
+                "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/apache-index/raw/main/tomcat server.xml web.xml copy-tomcat-conf.bat",
+                "name": "🐱 XAMPP TOMCAT 用 server.xml / web.xml",
+                "auto": true,
+                "group": "ダウンロード"
+            },
+            {
+                "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\download.vbs https://github.com/winofsql/hta-js-ado-mysql-req/raw/main hta-js-ado-mysql-req.htm hta.js",
+                "name": "🪔 HTA + 🐬 MySQL",
+                "auto": true,
+                "group": "ダウンロード"
+            },
+            {
+                "command": "start chrome https://github.com/winofsql/subject",
+                "name": "Subject ワークスペース用テンプレート",
+                "auto": true,
+                "group": "ブックマーク"
+            },
+            {
+                "command": "start chrome https://github.com/winofsql/vscode-template",
+                "name": "VS Code テンプレート",
+                "auto": true,
+                "group": "ブックマーク"
+            },
+            {
+                "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\setup-vscode-user.vbs && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\sworc-settings-download.vbs",
+                "name": "📥 基本設定",
+                "auto": true,
+                "group": "🖐 設定"
+            },
+            {
+                "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "💬 ワークスペース作成",
+                "auto": true,
+                "group": "🖐 設定"
+            },
+            {
+                "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\build-xampp-alias.vbs",
+                "name": "💯 XAMPP Alias 設定",
+                "auto": true,
+                "group": "🖐 設定"
+            },
+            {
+                "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\build-tomcat-path.vbs && cd WEB-INF\\classes\\lightbox && cmd /c comp.bat",
+                "name": "🐱 TOMCAT PATH 作成",
+                "auto": true,
+                "group": "🖐 設定"
+            },
+            {
+                "command": "cd ..\\..\\ && git clone https://github.com/winofsql/subject.git && ren subject subject-%date:~5,2%%date:~8,2% && cd subject-%date:~5,2%%date:~8,2% && rmdir .git /S /Q && copy README.md zz-workspace",
+                "name": "🟥 SUBJECT 今日の日付",
+                "auto": true,
+                "group": "🖐 設定"
+            },
+            {
+                "command": "cd ..\\..\\ && git clone https://github.com/winofsql/subject.git && ren subject subject-main && cd subject-main && rmdir .git /S /Q",
+                "name": "🟥 SUBJECT MAIN",
+                "auto": true,
+                "group": "🖐 設定"
+            },
+            {
+                "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\git-clone.vbs && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "🔱 Your's GIT",
+                "auto": true,
+                "group": "🖐 設定"
+            }
+        ]
+    }
+
+}
