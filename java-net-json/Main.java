@@ -1,4 +1,5 @@
 import java.net.*;
+import java.util.*;
 import java.io.*;
 import com.google.gson.Gson;
 
@@ -13,8 +14,12 @@ public class Main {
             // テキストで書き込み為の準備
             BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( new FileOutputStream(filename), "utf-8" ) );			
 
+            System.out.println("社員コード");
+            Scanner sc = new Scanner(System.in);
+            String line = sc.nextLine();
+
             // URL文字列
-            String str = "http://localhost/php-test/db-select-02-heardoc.php";
+            String str = "http://localhost/php-test/db-select-02-heardoc.php?scode=" + line;
             // ターゲット
             URL url = new URL( str );
             // 接続オブジェクト
@@ -50,16 +55,21 @@ public class Main {
             Gson gson = new Gson();
             // データ部分のみ使用
             Syain data = gson.fromJson( sb.toString(), Syain.class );
-            bw.write( String.format("%s\r\n", data.社員コード ) );
-            bw.write( String.format("%s\r\n", data.氏名 ) );
-            bw.write( String.format("%s\r\n", data.フリガナ ) );
-            bw.write( String.format("%s\r\n", data.所属 ) );
-            bw.write( String.format("%s\r\n", data.性別 ) );
-            bw.write( String.format("%s\r\n", data.給与 ) );
-            bw.write( String.format("%s\r\n", data.手当 ) );
-            bw.write( String.format("%s\r\n", data.管理者 ) );
-            bw.write( String.format("%s\r\n", data.作成日 ) );
-            bw.write( String.format("%s\r\n", data.更新日 ) );
+            if ( (data.社員コード).equals("false") ) {
+                bw.write("データが存在しません");
+            }
+            else {
+                bw.write( String.format("%s\r\n", data.社員コード ) );
+                bw.write( String.format("%s\r\n", data.氏名 ) );
+                bw.write( String.format("%s\r\n", data.フリガナ ) );
+                bw.write( String.format("%s\r\n", data.所属 ) );
+                bw.write( String.format("%s\r\n", data.性別 ) );
+                bw.write( String.format("%s\r\n", data.給与 ) );
+                bw.write( String.format("%s\r\n", data.手当 ) );
+                bw.write( String.format("%s\r\n", data.管理者 ) );
+                bw.write( String.format("%s\r\n", data.作成日 ) );
+                bw.write( String.format("%s\r\n", data.更新日 ) );
+            }
 
             bw.close();		// BufferedWriter
 
