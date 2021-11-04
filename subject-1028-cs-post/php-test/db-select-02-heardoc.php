@@ -11,7 +11,7 @@ $pdo = new PDO( $GLOBALS["connect_string"], $GLOBALS["user"], $GLOBALS["password
 // ***********************************
 // SQL 文字列
 // ***********************************
-$sql = "SELECT * FROM 社員マスタ WHERE 社員コード = '0001'"; //>= :kyuyo ORDER BY 社員コード';
+$sql = "SELECT * FROM 社員マスタ WHERE 社員コード = :scode"; //>= :kyuyo ORDER BY 社員コード';
 // ***********************************
 // 準備
 // ***********************************
@@ -20,8 +20,11 @@ $statement = $pdo->prepare($sql);
 // ***********************************
 // バインド
 // ***********************************
-// $kyuyo = 300000;
-// $statement->bindValue(':kyuyo', $kyuyo, PDO::PARAM_INT);
+if ( !isset($_GET['scode']) ) {
+    $_GET['scode'] = '0001';
+}
+$scode = $_GET['scode'];
+$statement->bindValue(':scode', $scode, PDO::PARAM_STR);
 
 // ***********************************
 // 実行
@@ -33,8 +36,12 @@ $statement->execute();
 // ***********************************
 $html = "";
 $row = $statement->fetch(PDO::FETCH_ASSOC);
-
-print json_encode($row, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE );
+if ( $row === false ) {
+    print '{ "社員コード": "false"  }';
+}
+else {
+    print json_encode($row, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE );
+}
 
 
 ?>
