@@ -1,8 +1,8 @@
 # subject-1104
 
-## C# から PHP へ POST : cs-form-1104-01
+## cs-form-1104-01 : C# から PHP へ POST : 
 
-## java から PHP へ POST
+## java-net-post : java から PHP へ POST
 C# と Java から POST\
 その後社員マスタ更新の API( PHP ) 作成
 
