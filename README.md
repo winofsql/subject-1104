@@ -8,7 +8,7 @@
 
 - ### cs-form-1104-01 は Visual Studio で作った画面を使ってPHP掲示板に POST
 
-- ### java-net-json で、php-test/db-update-api.php に GET とでパラメータを渡して更新
+- ### java-net-json で、csv から読み込んだデータを php-test/db-update-api.php に GET でパラメータを渡して更新
 
 <br>
 
