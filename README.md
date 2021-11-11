@@ -10,6 +10,8 @@
 
 - ### java-net-json で、csv から読み込んだデータを php-test/db-update-api.php に GET でパラメータを渡して更新
 
+- ### db-update-api.php は JSON で 社員コードと氏名を返すので、Google Gson で オブシェクト化して使用する
+
 <br>
 
 - ### java-csv-read-ms932 : サンプル用
