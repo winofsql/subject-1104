@@ -1,6 +1,6 @@
 # subject-1104
 
-## cs-form-1104-01 : C# から PHP へ POST : 
+## subject-1028-cs-post : C# から PHP へ POST : 
 
 ## java-net-post : java から PHP へ POST
 C# と Java から POST\
